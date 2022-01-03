@@ -1,4 +1,4 @@
 #!/usr/bin/python3
 
-message = '"Programming is like building a mulitlingual puzzle'
+message = '"Programming is like building a multilingual puzzle'
 print(message)
