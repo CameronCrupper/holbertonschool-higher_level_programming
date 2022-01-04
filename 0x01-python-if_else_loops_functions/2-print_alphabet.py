@@ -1,3 +1,3 @@
 #!/usr/bin/python3
-string = "abcdefghijklmnopqrstuvwxyz"
-print(string.lower(), end=" ")
+for i in range(97,123):
+    print("{}".format(chr(i)), end=" ")
