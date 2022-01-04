@@ -1,5 +1,4 @@
 #!/usr/bin/python3
-d=[]
 
 for i in range(0, 9):
     for j in range(i + 1, 10):
