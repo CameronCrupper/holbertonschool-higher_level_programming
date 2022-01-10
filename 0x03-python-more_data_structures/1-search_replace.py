@@ -3,7 +3,7 @@ def search_replace(my_list, search, replace):
     result = []
     for item in my_list:
         if type(item) == list:
-            result.append(subst(item, search, replace))
+            result.append(search_replace(item, search, replace))
         elif item == search:
             result.append(replace)
         else:
