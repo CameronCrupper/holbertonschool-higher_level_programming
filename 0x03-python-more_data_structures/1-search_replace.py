@@ -1,7 +1,11 @@
 #!/usr/bin/python3
 def search_replace(my_list, search, replace):
-    for n, i in enumerate(my_list):
-        for sublist in my_list:
-            if i == search:
-                my_list[n]= replace
-    print(my_list)
+    result = []
+    for item in my_list:
+        if type(item) == list:
+            result.append(subst(item, search, replace))
+        elif item == search:
+            result.append(replace)
+        else:
+            result.append(item)
+    return result
