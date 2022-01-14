@@ -1,0 +1,37 @@
+The text file to test file 0-add-integer.py
+
+>>> add_integer = __import__('0-add_integer').add_integer
+
+SUCCESS CASES:
+
+Testing Signed/Unsigned Int & Float:
+	>>> print(add_integer(4, 5))
+	9
+	>>> print(add_integer(-1, 4))
+	3
+	>>> print(add_integer(1.9, 2.7))
+	3
+	>>> print(add_integer(-4.2, 2))
+	-2
+
+Testing if b actualy equals 98:
+	>>> print(add_integer(13))
+	111
+
+FAILS:
+
+Test characters:
+	>>> print(add_integer("WooOOoW"))
+	Traceback (most recent call last):
+	TypeError: a must be an integer
+
+Test for an array:
+	>>> print(add_integer(1, [7, 8, 9]))
+	Traceback (most recent call last):
+	TypeError: b must be an integer
+
+Test for additional arguements:
+	>>> print(add_integer(1, 5, 9))
+	Traceback (most recent call last):
+	TypeError: add_integer() takes from 1 to 2 positional arguments but 3 were given
+
