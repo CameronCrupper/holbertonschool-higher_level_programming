@@ -2,16 +2,17 @@
 
 
 """
+File should be python
+folder should be called tests
 Test this unit
 """
-
 
 import unittest
 max_integer = __import__('6-max_integer').max_integer
 
 class TestMaxInteger(unittest.TestCase):
     """
-    unittest class for max int
+    testing max integer
     """
 
     def test_empty(self):
