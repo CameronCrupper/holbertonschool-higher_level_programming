@@ -1,10 +1,12 @@
 #!/usr/bin/python3
 
+
 """
 A function that adds two integers
 both integers must be not float
 python3 -c 'print(__import__("my_module").__doc__)'
 """
+
 
 def add_integer(a, b=98):
 
