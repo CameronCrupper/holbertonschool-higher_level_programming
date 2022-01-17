@@ -1,10 +1,12 @@
 #!/usr/bin/python3
 
+
 """
 function that prints a statement with 2 entries
 first and last must be a string
 no importing of modules
 """
+
 
 def say_my_name(first_name, last_name=""):
 
@@ -12,6 +14,7 @@ def say_my_name(first_name, last_name=""):
     """
     function that prints My name is <first name> <last name>
     """
+
 
     if type(first_name) != str:
         raise TypeError("first_name must be a string")
