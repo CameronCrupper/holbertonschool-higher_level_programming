@@ -1,10 +1,12 @@
 #!/usr/bin/python3
 
+
 """
 function that divides all elements of a matrix
 must be int or float
 each matrix row must be equivalent
 """
+
 
 def matrix_divided(matrix, div):
 
@@ -18,7 +20,8 @@ def matrix_divided(matrix, div):
 
     new_matrix = []
     if type(matrix) is not list:
-        raise TypeError("matrix must be a matrix (list of lists) of integers/floats")
+        raise TypeError("matrix must be a matrix (list of lists) of \
+        integers/floats")
     size = len(matrix[0])
     for lists in matrix:
         if len(lists) != size:
