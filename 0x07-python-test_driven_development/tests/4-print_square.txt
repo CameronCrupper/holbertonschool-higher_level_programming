@@ -33,3 +33,11 @@ Test extra values:
     Traceback (most recent call last):
     TypeError: print_square() takes 1 positional argument but 2 were given
 
+Test different data types:
+    >>> print_square(2.3)
+    Traceback (most recent call last):
+    TypeError: size must be an integer
+
+    >>> print_square("1")
+    Traceback (most recent call last):
+    TypeError: size must be an integer
