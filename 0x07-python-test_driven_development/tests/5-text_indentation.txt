@@ -4,3 +4,20 @@ Test file for 5-text_indentation.py
 
 SUCCESS CASES:
 
+Test string:
+    >>> text_indentation("Testing a test with test")
+    Testing a test with test
+
+Test extra breaklines:
+    >>> text_indentation("Testing. A test with test.")
+    Testing.
+    <BLANKLINE>
+    A test with test.
+    <BLANKLINE>
+
+FAILS:
+
+Different data type:
+    >>> text_indentation(13)
+    Traceback (most recent call last):
+    TypeError: text must be a string
