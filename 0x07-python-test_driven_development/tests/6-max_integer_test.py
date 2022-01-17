@@ -15,7 +15,7 @@ class TestMaxInteger(unittest.TestCase):
 
     def test_negatives(self):
         """checks negative numbers"""
-        self.assertEqual(max_integer([-7, -8, -9]), -6)
+        self.assertEqual(max_integer([-1, -2, -3]), -1)
 
     def test_type(self):
         """makes sure input is a list"""
