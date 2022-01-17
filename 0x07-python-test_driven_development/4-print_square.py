@@ -1,12 +1,15 @@
 #!/usr/bin/python3
 
+
 """
 size is the length of the square
 size must be an integer
 size must be more than 0
 """
 
+
 def print_square(size):
+
     """
     function that prints a square
     """
