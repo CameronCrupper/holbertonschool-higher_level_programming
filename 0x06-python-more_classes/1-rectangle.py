@@ -1,8 +1,10 @@
 #!/usr/bin/python3
 
+
 """
 set a class for rectangle
 """
+
 
 class Rectangle:
 
@@ -45,4 +47,4 @@ class Rectangle:
 
     def perimeter(self):
         if self.__height or self.__width == 0:
-            return self.__height * 2 + self.__width * 2
+            return (self.__height * 2) + (self.__width * 2)
