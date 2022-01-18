@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 
 """
-
+set a class for rectangle
 """
 
 class Rectangle:
