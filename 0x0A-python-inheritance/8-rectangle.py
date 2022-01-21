@@ -16,6 +16,9 @@ class BaseGeometry:
     def area(self):
         raise Exception("area() is not implemented")
 
+    """
+    python3 -c 'print(__import__("my_module").MyClass.my_function.__doc__)'
+    """
     def integer_validator(self, name, value):
         self.value = value
         self.name = name
