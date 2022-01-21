@@ -9,6 +9,6 @@ def read_file(filename=""):
     """
     python3 -c 'print(__import__("my_module").my_function.__doc__)'
     """
-    with open("my_file_0.txt", encoding="utf-8") as filename:
+    with open(filename, encoding="utf-8") as f:
 
-        print(filename.read())
+        print(f.read())
