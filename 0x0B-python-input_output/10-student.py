@@ -5,9 +5,6 @@ python3 -c 'print(__import__("my_module").__doc__)'
 """
 
 
-from hashlib import new
-
-
 class Student:
     """
     python3 -c 'print(__import__("my_module").MyClass.__doc__)'
