@@ -1,4 +1,9 @@
-Testing by importing function from module
+=================================
+Unit test for module 1-my_list.py
+=================================
+
+Import module
+=============
     >>> Mylist = __import__('1-my_list').MyList
 
 Checking for empty list:
@@ -17,17 +22,18 @@ Checking for class docstring:
 	True
 
 Test appending:
-	 >>> list.append(1)
-	 >>> list.append(2)
-	 >>> list.append(3)
-	 >>> list.append(4)
-	 >>> print(list)
-	 [1, 2, 3, 4]
+	>>> list.append(1)
+	>>> list.append(2)
+	>>> list.append(3)
+	>>> list.append(4)
+	>>> print(list)
+	[1, 2, 3, 4]
 
 Test negative numbers:
-	 >>> list.append(-2)
-	 >>> list.append(6)
-	 >>> print(list)
-	 [4, 3, 2, 1, -2, 6]
-	 >>> list.print_sorted()
-	 [-2, 1, 2, 3, 4, 6]
+    >>> list = MyList()
+	>>> list.append(-2)
+	>>> list.append(6)
+	>>> print(list)
+	[4, 3, 2, 1, -2, 6]
+	>>> list.print_sorted()
+	[-2, 1, 2, 3, 4, 6]
