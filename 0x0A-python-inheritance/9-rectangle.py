@@ -8,6 +8,7 @@ python3 -c 'print(__import__("my_module").__doc__)
 
 BaseGeometry = __import__('7-base_geometry').BaseGeometry
 
+
 class Rectangle(BaseGeometry):
 
     """
