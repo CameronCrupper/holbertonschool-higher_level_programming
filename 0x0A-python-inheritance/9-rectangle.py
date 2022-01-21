@@ -1,22 +1,23 @@
 #!/usr/bin/python3
 
-class BaseGeometry:
 
-    def area(self):
-        raise Exception("area() is not implemented")
+"""
+python3 -c 'print(__import__("my_module").__doc__)
+"""
 
-    def integer_validator(self, name, value):
-        self.value = value
-        self.name = name
-
-        if not isinstance(value, int):
-            raise TypeError("{:s} must be an integer".format(name))
-        if value <= 0:
-            raise ValueError("{:s} must be greater than 0".format(name))
+BaseGeometry = __import__('7-base_geometry').BaseGeometry
 
 class Rectangle(BaseGeometry):
 
+    """
+    python3 -c 'print(__import__("my_module").my_function.__doc__)'
+    """
+
     def __init__(self, width, height):
+        """
+        python3 -c 'print(__import__("my_module").
+        MyClass.my_function.__doc__)'
+        """
         self.integer_validator("width", width)
         self.__width = width
         self.integer_validator("height", height)
@@ -24,6 +25,14 @@ class Rectangle(BaseGeometry):
 
     def area(self):
         return self.__width * self.__height
+    """
+    python3 -c 'print(__import__("my_module").
+        MyClass.my_function.__doc__)'
+    """
 
     def __str__(self):
         return "[Rectangle] {:d}/{:d}".format(self.__width, self.__height)
+    """
+    python3 -c 'print(__import__("my_module").
+        MyClass.my_function.__doc__)'
+    """
