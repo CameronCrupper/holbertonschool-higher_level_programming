@@ -1,6 +1,4 @@
 #!/usr/bin/python3
-
-
 """
 python3 -c 'print(__import__("my_module").__doc__)'
 """
@@ -10,13 +8,9 @@ Rectangle = __import__('9-rectangle').Rectangle
 
 
 class Square(Rectangle):
-
-
     """
     python3 -c 'print(__import__("my_module").my_function.__doc__)'
     """
-
-
     def __init__(self, size):
         """
         python3 -c 'print(__import__("my_module").MyClass.my_function.__doc__)'
