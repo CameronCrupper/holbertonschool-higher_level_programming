@@ -1,21 +1,17 @@
 #!/usr/bin/python3
 """
-python3 -c 'print(__import__("my_module").__doc__)'
+My list class
 """
 
 
 class MyList(list):
     """
-    python3 -c 'print(__import__("my_module").MyClass.__doc__)'
+    inheriting from list list
     """
     def __init__(self):
-        """
-        python3 -c 'print(__import__("my_module").MyClass.my_function.__doc__)'
-        """
+        """initializes the object using super()"""
         super().__init__()
 
     def print_sorted(self):
-        """
-        python3 -c 'print(__import__("my_module").MyClass.my_function.__doc__)'
-        """
+        """prints itself sorted"""
         print(sorted(self))
