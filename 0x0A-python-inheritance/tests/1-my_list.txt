@@ -1,6 +1,21 @@
 Testing by importing function from module
     >>> Mylist = __import__('1-my_list').MyList
 
+Checking for empty list:
+	>>> list = MyList()
+	>>> list.print_sorted()
+	[]
+
+Check mod docstring:
+	>>> m = __import__("1-my_list").__doc__
+    >>> len(m) > 1
+    True
+
+Checking for class docstring:
+	>>> c = __import__("1-my_list").MyList.__doc__
+	>>> len(c) > 1
+	True
+
 Test appending:
 	 >>> list.append(1)
 	 >>> list.append(2)
@@ -11,7 +26,7 @@ Test appending:
 
 Test negative numbers:
 	 >>> list.append(-2)
-	 >>> list.append(6
+	 >>> list.append(6)
 	 >>> print(list)
 	 [4, 3, 2, 1, -2, 6]
 	 >>> list.print_sorted()
