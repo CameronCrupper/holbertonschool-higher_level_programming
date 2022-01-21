@@ -11,9 +11,11 @@ Rectangle = __import__('9-rectangle').Rectangle
 
 class Square(Rectangle):
 
+
     """
     python3 -c 'print(__import__("my_module").my_function.__doc__)'
     """
+
 
     def __init__(self, size):
         """
