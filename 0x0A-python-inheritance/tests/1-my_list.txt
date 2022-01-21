@@ -1,17 +1,16 @@
-=================================
+=====================================
 Unit test for module 1-my_list.py
-=================================
+=====================================
 
 Import module
 =============
-    >>> Mylist = __import__('1-my_list').MyList
+::
+    >>> MyList = __import__("1-my_list").MyList
 
-Checking for empty list:
-	>>> list = MyList()
-	>>> list.print_sorted()
-	[]
+-----------------------------------------------------
+::
 
-Check mod docstring:
+Checking for mod docstring:
 	>>> m = __import__("1-my_list").__doc__
     >>> len(m) > 1
     True
@@ -21,19 +20,28 @@ Checking for class docstring:
 	>>> len(c) > 1
 	True
 
-Test appending:
-	>>> list.append(1)
+
+Checking for empty list:
+	>>> list = MyList()
+	>>> list.print_sorted()
+	[]
+
+
+Try Appending:
+    >>> list.append(1)
 	>>> list.append(2)
 	>>> list.append(3)
 	>>> list.append(4)
 	>>> print(list)
 	[1, 2, 3, 4]
 
-Test negative numbers:
-    >>> list = MyList()
-	>>> list.append(-2)
-	>>> list.append(6)
+Try Reverse list:
+	>>> list = MyList()
+	>>> list.append(4)
+	>>> list.append(3)
+	>>> list.append(2)
+	>>> list.append(1)
 	>>> print(list)
-	[4, 3, 2, 1, -2, 6]
+	[4, 3, 2, 1]
 	>>> list.print_sorted()
-	[-2, 1, 2, 3, 4, 6]
+	[1, 2, 3, 4]
