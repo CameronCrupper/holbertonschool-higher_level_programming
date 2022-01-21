@@ -1,0 +1,20 @@
+Testing by importing function from module
+    >>> Mylist = __import__('1-my_list').MyList
+
+Test appending:
+
+	 >>> list.append(1)
+	 >>> list.append(2)
+	 >>> list.append(3)
+	 >>> list.append(4)
+	 >>> print(list)
+	 [1, 2, 3, 4]
+
+Test negative numbers:
+
+	 >>> list.append(-1)
+	 >>> list.append(2
+	 >>> print(list)
+	 [4, 3, 2, 1, -1, 2]
+	 >>> list.print_sorted()
+	 [-1, 1, 2, 2, 3, 4]
