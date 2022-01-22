@@ -17,6 +17,6 @@ except FileNotFoundError:
     new = []
 
 for arg in argv[1:]:
-    list.append(arg)
+    new.append(arg)
 
-save_to_json_file(list, "add_item.json")
+save_to_json_file(new, "add_item.json")
