@@ -3,7 +3,6 @@
 
 """
 
-from sunau import Au_read
 from models.base import Base
 
 
@@ -98,3 +97,21 @@ class Rectangle(Base):
 
         """
         return self.__width * self.__height
+
+    def display(self):
+        """
+
+        """
+        for i in range(self.__y):
+            print()
+        for j in range(self.height):
+            print(" " * self.__x, end="")
+            print("#" * self.__width)
+
+    def __str__(self):
+        """
+
+        """
+        k = "[Rectangle] ({:d}) {:d}/{:d} - {:d}/{:d}"
+        return k.format(self.id, self.__x, self.__y,
+        self.__width, self.__height)
