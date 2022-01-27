@@ -99,14 +99,10 @@ class Rectangle(Base):
         return self.__width * self.__height
 
     def display(self):
-        """
-
-        """
-        for i in range(self.__y):
+        for i in range(self.y):
             print()
         for j in range(self.height):
-            print(" " * self.__x, end="")
-            print("#" * self.__width)
+            print("{}{}".format(" " * self.x, "#" * self.width))
 
     def __str__(self):
         """
@@ -122,9 +118,14 @@ class Rectangle(Base):
         """
         if args:
             item = ['id', 'width', 'height', 'x', 'y']
-            for i, arg in enumerate(args):
-                setattr(self, item[i], arg)
+            for l, arg in enumerate(args):
+                setattr(self, item[l], arg)
         else:
             for key, value in kwargs.items():
                 setattr(self, key, value)
 
+    def to_dictionary(self):
+        """
+
+        """
+        return {'id': self.id, 'width': self.width, 'height': self.height, 'x': self.x, 'y': self.y}
