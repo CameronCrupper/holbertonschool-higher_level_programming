@@ -49,4 +49,3 @@ class Square(Rectangle):
         """
         sq = "[Square] ({:d}) {:d}/{:d} - {:d}"
         return sq.format(self.id, self.x, self.y, self.width)
-
