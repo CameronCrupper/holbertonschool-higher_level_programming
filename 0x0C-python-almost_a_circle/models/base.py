@@ -1,11 +1,7 @@
 #!/usr/bin/python3
-
-
 """
 Module for "Base" class
 """
-
-
 import json
 
 
@@ -14,7 +10,6 @@ class Base:
     Creates class named Base
     """
     __nb_objects = 0
-
 
     def __init__(self, id=None):
         """
