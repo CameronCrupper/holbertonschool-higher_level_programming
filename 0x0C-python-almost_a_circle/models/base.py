@@ -71,9 +71,9 @@ class Base:
         return list of all instances
         """
         file = cls.__name__ + ".json"
-        new = []
-        with open(file, 'r') as myFile:
-            new = cls.from_json_string(myFile.read())
-            for i, j in enumerate(new):
-                new[i] = cls.create(**new[i])
-        return new
+        try:
+            with open(file, 'r') as myFile:
+                new = cls.from_json_string(myFile.read())
+                return [cls.create(**i) for i in new]
+        except Exception:
+            return []
