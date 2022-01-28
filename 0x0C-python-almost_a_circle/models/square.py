@@ -51,6 +51,9 @@ class Square(Rectangle):
         return sq.format(self.id, self.x, self.y, self.width)
 
     def update(self, *args, **kwargs):
+        """
+        public method that assigns attributes
+        """
         if args:
             i = ['id', 'size', 'x', 'y']
             for j, arg in enumerate(args):
