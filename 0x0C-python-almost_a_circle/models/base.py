@@ -49,7 +49,7 @@ class Base:
         """
         return JSON string to json_string
         """
-        if json_string is None or json_string == []:
+        if json_string is None or json_string == "[]":
             i = []
             return i
         else:
