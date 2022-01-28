@@ -1,13 +1,25 @@
 #!/usr/bin/python3
 
+
+"""
+Module for "Base" class
+"""
+
+
 import json
 
 
 class Base:
-
+    """
+    Creates class named Base
+    """
     __nb_objects = 0
 
+
     def __init__(self, id=None):
+        """
+        Initializing Base class
+        """
         if id is not None:
             self.id = id
         else:
@@ -17,7 +29,7 @@ class Base:
     @staticmethod
     def to_json_string(list_dictionaries):
         """
-
+        return JSON string representaion of list_dictionaries
         """
         if list_dictionaries is None:
             return []
@@ -27,7 +39,7 @@ class Base:
     @classmethod
     def save_to_file(cls, list_objs):
         """
-
+        writes JSON string of list_objects to file
         """
         file = cls.__name__ + ".json"
         listobj = []
@@ -40,7 +52,7 @@ class Base:
     @staticmethod
     def from_json_string(json_string):
         """
-
+        return JSON string to json_string
         """
         if json_string is None:
             return []
@@ -50,7 +62,7 @@ class Base:
     @classmethod
     def create(cls, **dictionary):
         """
-
+        return instance with all attributes already set
         """
         if cls.__name__ == "Rectangle":
             fake = cls(1, 1)
@@ -61,6 +73,9 @@ class Base:
 
     @classmethod
     def load_from_file(cls):
+        """
+        return list of all instances
+        """
         file = cls.__name__ + ".json"
         new = []
         with open(file, 'r') as myFile:
