@@ -103,7 +103,7 @@ class Rectangle(Base):
         """
         k = "[Rectangle] ({:d}) {:d}/{:d} - {:d}/{:d}"
         return k.format(self.id, self.__x, self.__y,
-            self.__width, self.__height)
+                        self.__width, self.__height)
 
     def display(self):
         """
@@ -131,4 +131,4 @@ class Rectangle(Base):
         return dictionary representation of Rectangle
         """
         return {'id': self.id, 'width': self.width,
-            'height': self.height, 'x': self.x, 'y': self.y}
+                'height': self.height, 'x': self.x, 'y': self.y}
