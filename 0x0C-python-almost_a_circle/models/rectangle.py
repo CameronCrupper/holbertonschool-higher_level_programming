@@ -10,6 +10,9 @@ class Rectangle(Base):
     define class for rectangle
     """
     def __init__(self, width, height, x=0, y=0, id=None):
+        """
+        creating a rectangle with 4 arguments
+        """
         self.width = width
         self.height = height
         self.x = x
