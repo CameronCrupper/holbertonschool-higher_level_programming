@@ -14,7 +14,7 @@ if __name__ == "__main__":
     """
     takes 3 arguments, uses module SQLAlchemy, importState
     and Base from model_state - from model_state import Base, State
-    , connects to localhost at port 3306, sorted in ascending 
+    , connects to localhost at port 3306, sorted in ascending
     order by states.id, not executed when imported
     """
     datab = "mysql+mysqldb://{}:{}@localhost:3306/{}".format(
