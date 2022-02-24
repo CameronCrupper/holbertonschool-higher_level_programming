@@ -11,7 +11,12 @@ from sys import argv
 
 if __name__ == "__main__":
     """
-    
+    takes 3 arguments, uses module SQLAlchemy, imports state
+    and Base from model_state - from model_state import Base, State
+    connects to locahost at port 3306, displayed state must be first
+    in states.id, can't fetch all states from db before displaying
+    results, if states table is empty print nothing with newline,
+    not executed when imported
     """
     datab = 'mysql+mysqldb://{}:{}@localhost:3306/{}'.format(
         argv[1], argv[2], argv[3])
