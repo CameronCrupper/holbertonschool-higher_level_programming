@@ -9,6 +9,7 @@ from sqlalchemy.orm import sessionmaker
 from model_state import Base, State
 from sys import argv
 
+
 if __name__ == "__main__":
     """
     takes 3 arguments, uses module SQLAlchemy, importState
